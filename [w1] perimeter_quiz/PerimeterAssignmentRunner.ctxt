@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=PerimeterAssignmentRunner
+comment1.params=s
+comment1.target=double\ getPerimeter(edu.duke.Shape)
+comment10.params=
+comment10.target=void\ printFileNames()
+comment11.params=args
+comment11.target=void\ main(java.lang.String[])
+comment2.params=s
+comment2.target=int\ getNumPoints(edu.duke.Shape)
+comment3.params=s
+comment3.target=double\ getAverageLength(edu.duke.Shape)
+comment4.params=s
+comment4.target=double\ getLargestSide(edu.duke.Shape)
+comment5.params=s
+comment5.target=double\ getLargestX(edu.duke.Shape)
+comment6.params=dr
+comment6.target=double\ getLargestPerimeterMultipleFiles(edu.duke.DirectoryResource)
+comment7.params=dr
+comment7.target=java.lang.String\ getFileWithLargestPerimeter(edu.duke.DirectoryResource)
+comment8.params=
+comment8.target=void\ testAllFile()
+comment8.text=\ public\ void\ testPerimeter\ ()\ {\n\ \ \ \ \ \ \ \ FileResource\ fr\ \=\ new\ FileResource();\n\ \ \ \ \ \ \ \ Shape\ s\ \=\ new\ Shape(fr);\n\ \ \ \ \ \ \ \ double\ length\ \=\ getPerimeter(s);\n\ \ \ \ \ \ \ \ System.out.println("perimeter\ \=\ "\ +\ length);\n}
+comment9.params=
+comment9.target=void\ triangle()
+numComments=12
