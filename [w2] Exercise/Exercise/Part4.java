@@ -33,18 +33,10 @@ public class Part4 {
             }
             
         }
-        
-        
-        
-        
-    
-    
 
     }
     
-    
-    
-    
+   
     public void test(){
     
             URLResource url = new URLResource("http://www.dukelearntoprogram.com/course2/data/manylinks.html");
@@ -52,7 +44,6 @@ public class Part4 {
             for(String each_word : url.words()){
                 System.out.println(each_word);
             }
-    
     }
     
     
