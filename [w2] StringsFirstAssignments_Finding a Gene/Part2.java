@@ -11,7 +11,7 @@ public class Part2 {
                  
         if(startCodon == -1) return "no ATG";
         
-        if(stopCodon == -1) return "no TTA";
+        if(stopCodon == -1) return "no TAA";
         
         if((stopCodon - startCodon) % 3 != 0) return "not multiples of 3";
         
@@ -22,15 +22,15 @@ public class Part2 {
     
         String dna_lower = dna.toLowerCase();
         
-        if(dna.equals(dna_lower)) return new Pair<Integer> (dna.indexOf("atg"), dna.indexOf("tta"));
-        else return new Pair<Integer> (dna.indexOf("ATG"), dna.indexOf("TTA"));
+        if(dna.equals(dna_lower)) return new Pair<Integer> (dna.indexOf("atg"), dna.indexOf("taa"));
+        else return new Pair<Integer> (dna.indexOf("ATG"), dna.indexOf("TAA"));
 
     }
     
     public void testSimpleGene(){
         
         //ordinary case
-        String dna1 = "AAAATGBBBBBBTTAAAA";
+        String dna1 = "AAAATGBBBBBBTAAAAA";
         
         Pair<Integer> pair1 = UpperLower(dna1);
         int startCodon1 = pair1.first();
@@ -41,7 +41,7 @@ public class Part2 {
             
         
         //no ATG
-        String dna2 = "AAAAAAAAAAAAAAATTA";
+        String dna2 = "AAAAAAAAAAAAAAATTAA";
         
         Pair<Integer> pair2 = UpperLower(dna2);
         int startCodon2 = pair2.first();
@@ -51,7 +51,7 @@ public class Part2 {
         System.out.println("DNA2 is " + dna2 + "\n" + "Result is " + result2);
             
         
-        //no TTA
+        //no TAA
         String dna3 = "ATGAAAAAAAAAAAAA";
         
         Pair<Integer> pair3 = UpperLower(dna3);
@@ -63,7 +63,7 @@ public class Part2 {
             
         
         //The result is not multiple 3
-        String dna4 = "ATGAATTA";
+        String dna4 = "ATGAATAA";
         
         Pair<Integer> pair4 = UpperLower(dna4);
         int startCodon4 = pair4.first();
@@ -74,7 +74,7 @@ public class Part2 {
         
         
         //lower case
-        String dna5 = "aaaatgbbbbbbttaaaa";
+        String dna5 = "aaaatgbbbbbbtaaaaa";
         
         Pair<Integer> pair5 = UpperLower(dna5);
         int startCodon5 = pair5.first();
