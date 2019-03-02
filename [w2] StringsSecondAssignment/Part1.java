@@ -116,10 +116,11 @@ public class Part1 {
         System.out.println("==================================== START ====================================");
         
         String resultDNA = "";
+        int num_loop = dna.length();
         int count = 0;
         
         //Iterate to find all genes in File
-        for(int i = 0 ; i < dna.length() ; ){
+        for(int i = 0 ; i < num_loop ; ){
             
             resultDNA = findGene(dna);
             System.out.println("DNA = " + resultDNA);
@@ -127,6 +128,9 @@ public class Part1 {
             
             //Move the index after the Gene we finding.
             int stopIndex = findClosestStopcodon(dna, dna.indexOf("ATG"), list_stopCodon);
+            
+            if(stopIndex == dna.length()) break;
+            
             dna = dna.substring(stopIndex);
             i = stopIndex;
             
