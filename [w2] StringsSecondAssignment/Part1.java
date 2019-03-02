@@ -111,11 +111,9 @@ public class Part1 {
     
     }
     
-    public void printAllGenes_text(){
+    public void printAllGenes_text(String dna){
     
         System.out.println("==================================== START ====================================");
-
-        String dna = "AATGCTAACTAGCTGACTAAT";
         
         String resultDNA = "";
         int count = 0;
@@ -137,6 +135,8 @@ public class Part1 {
     
         System.out.println("Num of DNA =" + count);
     }
+    
+    /*
     
     public void printAllGenes_file(){
     
@@ -167,5 +167,7 @@ public class Part1 {
     
         System.out.println("Num of DNA =" + count);
     }
+    
+    */
     
 }
