@@ -7,7 +7,8 @@
  */
 
 
-import edu.duke.URLResource;
+import edu.duke.*;
+import java.io.*;;
 
 
 public class Part4 {
@@ -37,14 +38,29 @@ public class Part4 {
     }
     
    
-    public void test(){
-    
+    public void test_words(){
+
             URLResource url = new URLResource("http://www.dukelearntoprogram.com/course2/data/manylinks.html");
 
+            System.out.println("========================= TEST by words =========================");
+            
+            
             for(String each_word : url.words()){
                 System.out.println(each_word);
             }
     }
+    
+    public void test_lines(){
+    
+            URLResource url = new URLResource("http://www.dukelearntoprogram.com/course2/data/manylinks.html");
+
+            System.out.println("========================= TEST by lines =========================");
+            
+            for(String each_word : url.lines()){
+                System.out.println(each_word);
+            }
+    }
+    
     
     
 }

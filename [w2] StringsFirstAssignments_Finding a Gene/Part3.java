@@ -5,6 +5,11 @@
  * @author (작성자 이름) 
  * @version (버전번호나 날짜)
  */
+
+import edu.duke.*;
+import java.io.*;
+
+
 public class Part3 {
 
     public boolean twoOccurrences(String stringa, String stringb) {
@@ -16,7 +21,7 @@ public class Part3 {
         int length_a = stringa.length();
         int length_b = stringb.length();
                
-        for(int i=0 ; i < stringb.length(); ){
+        for(int i=0 ; i < length_b ; ){
             temp_num = temp_str.indexOf(stringa);
             
             if(temp_num == -1) break;
@@ -58,6 +63,7 @@ public class Part3 {
         
         System.out.println("\n");
         
+        
         // True case
         String test2a = "atg";
         String test2b = "atgaaabbbbbbttaatg";
@@ -69,6 +75,7 @@ public class Part3 {
         
         System.out.println("\n");
         
+        
         // False case
         String test3a = "c";
         String test3b = "car";
@@ -79,6 +86,7 @@ public class Part3 {
         System.out.println("Last Part= " + result_lastPart3);
         
         System.out.println("\n");
+        
         
         // False case
         String test4a = "zoo";

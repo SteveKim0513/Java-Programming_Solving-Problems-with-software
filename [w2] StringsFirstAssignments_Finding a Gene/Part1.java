@@ -5,6 +5,11 @@
  * @author (작성자 이름) 
  * @version (버전번호나 날짜)
  */
+
+import edu.duke.*;
+import java.io.*;
+
+
 public class Part1 {
 
     public String findSimpleGene(String dna){
