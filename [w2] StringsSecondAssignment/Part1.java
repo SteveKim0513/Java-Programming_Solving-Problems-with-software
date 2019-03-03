@@ -131,8 +131,8 @@ public class Part1 {
             
             if(stopIndex == dna.length()) break;
             
-            dna = dna.substring(stopIndex);
-            i = stopIndex;
+            dna = dna.substring(stopIndex+3);
+            i = i + stopIndex + 3;
             
             count ++;
         }
