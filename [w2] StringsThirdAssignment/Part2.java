@@ -32,8 +32,11 @@ public class Part2 {
     
         int count = 0;
         
-        for( int i=0 ; i < dna.length() ; i++ ){
-        
+        for( int i=0 ; i < dna.length()-2 ; i++ ){
+            
+            System.out.println("Processing...");
+            System.out.println(i);
+
             if(dna.substring(i, i+3).equals("CTG")) count++;
             
         }

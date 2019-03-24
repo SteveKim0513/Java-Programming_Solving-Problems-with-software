@@ -14,10 +14,13 @@ public class Part3 {
     
     Part1 F1 = new Part1();
     Part2 F2 = new Part2();
+    make_File_to_DNA DNA = new make_File_to_DNA();
     Test_StorageResource TS = new Test_StorageResource();
     
     public void processGenes(StorageResource sr){
-    
+        
+        System.out.println("===== Process All Genes from StorageResource =====");
+        
         int count_9 = 0;
         int count_cg = 0;
         int length_gene = 0;
@@ -50,6 +53,54 @@ public class Part3 {
         }
         System.out.println("Result = " + length_gene);
     }
+    
+        public void processGenes2(StorageResource sr){
+        
+        System.out.println("===== Process All Genes from StorageResource =====");
+        
+        int count_60 = 0;
+
+        
+        System.out.println("Longer than 60 Char");
+        for(String curr : sr.data()){
+            if(curr.length() > 60){
+                count_60 ++;
+                System.out.println(curr);
+            }
+        }
+        System.out.println("Number of Strings(longer than 60 characters) = " + count_60);
+        
+    }
+
+    public void testProcessGenes(){
+    
+        System.out.println("===== START TEST =====");
+        String dna = DNA.FileToDNA();
+        StorageResource Storage_R = F1.getAllGenes_text(dna);
+        
+        System.out.println("Number of All DNA = " + Storage_R.size());
+        processGenes(Storage_R);
+    
+    }    
+    
+    public void testProcessGenes2_over60(){
+    
+        System.out.println("===== START TEST =====");
+        String dna = DNA.FileToDNA();
+        processGenes2(F1.getAllGenes_text(dna));
+    
+    }    
+    
+    public void testProcessGenes3_countCTG(){
+    
+        System.out.println("===== START TEST =====");
+        String dna = DNA.FileToDNA();
+        int num_CTG = F2.countCTG(dna);
+        
+        System.out.println("Num of CTG = " + num_CTG);
+        
+    }    
+    
     
     
     public void test(){

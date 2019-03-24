@@ -113,7 +113,7 @@ public class Part1 {
     
     public void printAllGenes_text(String dna){
     
-        System.out.println("==================================== START ====================================");
+        System.out.println("===== Print All Genes from Text =====");
         
         String resultDNA = "";
         int num_loop = dna.length();
@@ -141,7 +141,7 @@ public class Part1 {
     }
     
     public StorageResource getAllGenes_text(String dna){
-        System.out.println("==================================== START ====================================");
+        System.out.println("===== Get All Genes from DNA text and move them to StorageResource =====");
         
         StorageResource geneList = new StorageResource();
         

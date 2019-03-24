@@ -2,6 +2,14 @@
 comment0.target=Part3
 comment1.params=sr
 comment1.target=void\ processGenes(edu.duke.StorageResource)
-comment2.params=
-comment2.target=void\ test()
-numComments=3
+comment2.params=sr
+comment2.target=void\ processGenes2(edu.duke.StorageResource)
+comment3.params=
+comment3.target=void\ testProcessGenes()
+comment4.params=
+comment4.target=void\ testProcessGenes2_over60()
+comment5.params=
+comment5.target=void\ testProcessGenes3_countCTG()
+comment6.params=
+comment6.target=void\ test()
+numComments=7
